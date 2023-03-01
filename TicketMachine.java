@@ -22,7 +22,6 @@ public class TicketMachine
     
     private Integer status; 
 
-
     /**
      * Create a machine that issues tickets of the given price.
      * Note that the price must be greater than zero, and there
@@ -62,6 +61,11 @@ public class TicketMachine
         return balance;
     }
 
+    public Integer getTotal()
+    {
+        return total;
+    }
+    
     /**
      * Receive an amount of money in cents from a customer.
      */
@@ -80,7 +84,6 @@ public class TicketMachine
         ticketNumber++;
         return ticketNumber;
     }
-    
 
     /**
      * Print a ticket.
@@ -98,4 +101,5 @@ public class TicketMachine
         
         return "Ticket price: " + price + " cents. " + "Your total is " + total + ".";
     }
+    
 }

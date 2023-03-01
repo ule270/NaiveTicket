@@ -34,7 +34,7 @@ public class TicketMachine
         total = 0;
         ticketNumber = 0;
     }
-
+    
     /**
      * Return the price of a ticket.
      */

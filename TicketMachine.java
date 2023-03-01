@@ -85,6 +85,17 @@ public class TicketMachine
         return ticketNumber;
     }
 
+    public void promptTicketMachine()
+    {
+        System.out.println("Please insert the correct amount of money.");
+    }
+    
+    public void showPrice()
+    {
+        int i = price;
+        System.out.println("The price of a ticket is " + i + "cents.");
+        return;
+    }
     /**
      * Print a ticket.
      * Update the total collected and

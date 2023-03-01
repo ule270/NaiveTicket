@@ -83,8 +83,8 @@ incrementTicketNumber()
 
 ```java
 private int count; integer
-private Student representative; class
-private Server host; class 
+private Student representative; Student
+private Server host; Server
 ```
 
 ### Exercise 2.12
@@ -105,12 +105,13 @@ private int price;
 does it matter which order the three words appear in?
 * Edit the `TicketMachine` class to try different orderings. After each change, close the editor.
     * Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
-possible? Moving price before Integer has error in that incorrect class type. 
+possible? 
+    Moving price before Integer has error in that incorrect class type. 
     * Check by pressing the compile button to see if there is an error message.
     * Make sure that you reinstantiate the original version after your experiments!
 
 ### Exercise 2.14 
-* Is it always necessary to have a semicolon at the end of a field declaration?
+* Is it always necessary to have a semicolon at the end of a field declaration? Yes
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
@@ -118,20 +119,22 @@ possible? Moving price before Integer has error in that incorrect class type.
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
 
+public Integer status; 
+
 ### Exercise 2.16
-* To what class does the following constructor belong?
+* To what class does the following constructor belong? Student
 ```
 public Student(String name)
 ```
 
 ### Exercise 2.17
-* How many parameters does the following constructor have and what are their types?
+* How many parameters does the following constructor have and what are their types? 2 parameters. String and double. 
 ```
 public Book(String title, double price)
 ```
 
 ### Exercise 2.18
-* Can you guess what types some of the `Book` class’s fields might be?
-* Can you assume anything about the names of its fields?
+* Can you guess what types some of the `Book` class’s fields might be? Preface, Pages, Chapters, Genre
+* Can you assume anything about the names of its fields? Fields will contain strings. 
 
 READ upto and INCLUDING section 2.15 of this chapter.
